@@ -15,7 +15,47 @@
                 <a href="#">Mi Perfil</a>
             </nav>
         </div>
+        <div class="row"> <!-- los datos del dueño del perfil-->
+            <div> <!-- display de datos-->
+                <span>Este Esun Nombre Completo</span> <br>
+                <span>11222333-0</span> <br>
+                <span>correo@direccion.dom</span> <br>
+            </div>
+            <div> <!-- display de controles-->
+                <button>Cambiar Contraseña</button>
+                <form action="#">
+                    <label for="actual">Contraseña Actual</label> <input type="pasword" name="actual" id="actual">
+                    <label for="nueva">Contraseña Nueva</label> <input type="pasword" name="nueva" id="nueva">
+                    <label for="nuevaRep">Contraseña Nueva</label> <input type="pasword" name="nuevaRep" id="nuevaRep">
+                </form>
+            </div>
+        </div>
+        <div class="row"> <!-- La lista de cursos con sus notas van aqui -->
+            <div>
+                <table>
+                    <tr> <!-- colspan del td 1 para datos, 2 para notas-->
+                        <td>
+                            <span>Ingenieria de Software </span><br>
+                            <span>Sec 1, 2018 Primavera</span><br>
+                            <span>Docente</span>
+                        </td>
+                        <td> No hay notas registradas para este curso.</td>
+                    </tr>
 
+                    <tr>
+                        <td>
+                            <span>Ingenieria de Software II </span><br>
+                            <span>Sec 1 2018 Primavera</span><br>
+                            <span>Estudiante</span>
+                        </td>
+                        <td>
+                            <Span> Notas </Span> <br>
+                            <span> Coev 1:</span> <span>7.0</span> <span> Coev 2:</span> <span>6.0</span> <span> Coev 3:</span> <span>4.0</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
 </body>
 </html>
