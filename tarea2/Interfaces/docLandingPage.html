@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid"> <!-- este es el container de la pag, para que boostrap pueda controlar el tamaño de todos los elementos-->
+        <div class="row"> <!-- primera row de la pagina, no se si sea necesario este wraper pero si sobra no importa -->
+            <nav class="col col-sm-12"> 
+                <img src="recursos/baseBaner.jpg">
+                <a href="#">Inicio</a>
+                <a href="#">Mi Perfil</a></nav>
+        </div>
+        <hr>
+        <div class="row ml-2"> <!-- segundo row, aqui van las tablas que mostramos -->
+            
+            <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
+                <table class="resumentcursos"> <!-- Lista de cursos-->
+                    <tr>
+                        <td>
+                            <span>Ingenieria de Software </span><br>
+                            <span>Sec 1 2018 Primavera</span><br>
+                            <span>Docente</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span>Ingenieria de Software II </span><br>
+                            <span>Sec 1 2018 Primavera</span><br>
+                            <span>Estudiante</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
+                <table> <!-- Lista de coevaluaciones -->
+                    <tr>
+                        <td>
+                            <span>Ingenieria de Software </span> <span>Abierto</span> <br>
+                            <span>20 de Octubre a 30 de Octubre</span> <br>
+                            <button>Cambiar Fecha</button><button>Publicar</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span>Ingenieria de Software II </span> <span>Cerrado</span> <br>
+                            <span>19 de Octubre a 29 de Octubre</span> <br>
+                            <button>Cambiar Fecha</button> <input type="date" name="cambiarFecha" id="cambiarFecha"> <button>Confirmar</button>
+                            </span> <button>Publicar</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div> <!-- Aqui va el footer cunado entras como admin, solo referencia -->
+            <div class="row ml-2"> <!-- row para buscar usuario-->
+                <form action="#" class="col col-md-10">
+                    <input type="text" name="idEstudiante" id="idEstudiante">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+            <div class="row ml-2"> <!-- row para formularios -->
+                <div class="col col-md-5"> <!-- Formulario para agregar Cursos -->             
+                    <button>Agregar Curso</button>
+                    <form action="#">
+                        <label for="nombreCurso">Nombre</label> <input type="text" name="nombreCursos" id="nombreCurso"> <br>
+                        <label for="codigoCurso">Codigo Curso</label> <input type="text" name="codigoCurso" id="codigoCurso"> <br>
+                        <label for="fechasCurso">Datos Fechas</label> <input type="text" name="fechasCurso" id="fechasCurso"> <br>                        
+                        <input type="submit" value="Subir">
+                    </form>
+                </div>
+                <div class="col col-md-5"> <!-- Formulario para agregar Cursos -->
+                    <button>Agregar Coevaluación</button>
+                    <form action="#">
+                        <label for="cursoCoev">Nombre</label> <input type="text" name="cursoCoev" id="cursoCoev"> <br>
+                        <label for="fechaCoev">Fechas Final</label> <input type="text" name="fechaCoev" id="fechaCoev"> <br>                        
+                        <input type="submit" value="Subir">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

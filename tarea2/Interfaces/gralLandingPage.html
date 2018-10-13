@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid"> <!-- este es el container de la pag, para que boostrap pueda controlar el tamaño de todos los elementos-->
+        <div class="row"> <!-- primera row de la pagina, no se si sea necesario este wraper pero si sobra no importa -->
+            <nav class="col col-sm-12"> 
+                <img src="recursos/baseBaner.jpg">
+                <a href="#">Inicio</a>
+                <a href="#">Mi Perfil</a>
+            </nav>
+        </div>
+        <div class="row ml-2"> <!-- segundo row, aqui van las tablas que mostramos -->
+            
+            <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
+                <table> <!-- Lista de cursos-->
+                    <tr>
+                        <td>
+                            <span>Ingenieria de Software </span><br>
+                            <span>Sec 1, 2018 Primavera</span><br>
+                            <span>Docente</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span>Ingenieria de Software II </span><br>
+                            <span>Sec 1 2018 Primavera</span><br>
+                            <span>Estudiante</span>
+                        </td>
+                    </tr> 
+                </table>
+            </div>
+            
+            <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
+                <table> <!-- Lista de coevaluaciones -->
+                    <tr>
+                        <td>
+                            <span>Ingenieria de Software </span> <span>Abierto</span> <br>
+                            <span>20 de Octubre a 30 de Octubre</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span>Ingenieria de Software II </span> <span>Cerrado</span> <br>
+                            <span>19 de Octubre a 29 de Octubre</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
