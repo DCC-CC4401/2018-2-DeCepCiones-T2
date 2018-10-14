@@ -16,20 +16,19 @@
             </nav>
         </div>
         <div class="row"> <!-- Los daños de la coevaluación-->
-            <div> <!-- display de datos-->
+            <div class="col col-md-5 ml-1"> <!-- display de datos-->
                 <span>Curso asociado a coevaluación: ..</span> <br>
                 <span>Estado de la coevaluación: ..</span> <br>
                 <span>Fecha de inicio de la coevaluación:.. </span> <br>
                 <span>Fecha de fín de la coevaluación:..</span>
             </div>
-            <div> <!-- display vacio, lo sacamos o lo dejamos por consistencia -->                
-                <span>Actualizar Fecha</span> <input type="date" name="cambiarFecha" id="cambiarFecha"> <button>Confirmar</button>
+            <div class="col col-md-5 ml-1"> <!-- display vacio, lo sacamos o lo dejamos por consistencia -->                
+                <span>Actualizar Fecha</span> <br>
+                <input type="date" name="cambiarFecha" id="cambiarFecha"> <button>Confirmar</button>
             </div>
         </div>
-    </div>
-    <hr>
-        <div class="row ml-2"> <!-- segundo row, aqui van las tablas que mostramos -->
-            
+        <hr>
+        <div class="row ml-2"> <!-- segundo row, aqui van las tablas que mostramos -->            
             <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
                 <table class="Alumnos"> 
                     <tr>
@@ -49,31 +48,31 @@
             <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
                 <table> <!-- Lista de coevaluaciones -->
                     <tr>
-                        <form action="#">
-                                <label for="rol">Seleccione al compañero que evaluó el estudiante: </label>
-                                <select name="rol" id="nuevoRol">
-                                <option value="">Compañero 1</option>
-                                <option value="">Compañero 2</option>
-                               </select> <br>
-              
-                                </form>
+                        
                         <td>
-                        <span>Pregunta 1. Nota: </span><br>
-                        <span>Pregunta 2. Nota: </span><br>
-                        <span>Pregunta 3. Nota: </span><br>
-                        <span>Pregunta 4. Nota: </span><br>
-                        <span>Pregunta 5. Nota: </span><br>
-                        <span>Pregunta 6. Nota: </span><br> 
-                        <span>Pregunta 7. Nota: </span><br>
-                        <span>Pregunta 8. Nota: </span><br>
-                        <span>Fortalezas: </span><br>
-                        <span>Debilidades: </span><br> 
+                            <form action="#">
+                                    <label for="rol">Seleccione al compañero que evaluó el estudiante: </label>
+                                    <select name="rol" id="nuevoRol">
+                                    <option value="">Compañero 1</option>
+                                    <option value="">Compañero 2</option>
+                                </select> <br>
+                
+                                    </form>
+                            <span>Pregunta 1. Nota: </span><br>
+                            <span>Pregunta 2. Nota: </span><br>
+                            <span>Pregunta 3. Nota: </span><br>
+                            <span>Pregunta 4. Nota: </span><br>
+                            <span>Pregunta 5. Nota: </span><br>
+                            <span>Pregunta 6. Nota: </span><br> 
+                            <span>Pregunta 7. Nota: </span><br>
+                            <span>Pregunta 8. Nota: </span><br>
+                            <span>Fortalezas: </span><br>
+                            <span>Debilidades: </span><br> 
                         </td>
-                    </tr>
-                    
+                    </tr>                    
                 </table>
             </div>
         </div>
-        <hr>
+    </div>
 </body>
 </html>
