@@ -5,17 +5,19 @@
     <title>Mi Perfil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="style/main.css" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid"> <!-- este es el container de la pag, para que boostrap pueda controlar el tamaño de todos los elementos-->
         <div class="row"> 
             <nav class="col col-sm-12"> 
                 <img src="recursos/baseBaner.jpg">
-                <a href="#">Inicio</a>
-                <a href="#">Mi Perfil</a>
+                <a class="navLink" href="#">Inicio</a>
+                <a class="navLink" href="#">Mi Perfil</a>
+                <a class="navLink" href="#">Logout</a>
             </nav>
         </div>
-        <div class="row"> <!-- los datos del dueño del perfil-->
+        <div class="row datos"> <!-- los datos del dueño del perfil-->
             <div> <!-- display de datos-->
                 <span>Este Esun Nombre Completo</span> <br>
                 <span>11222333-0</span> <br>
@@ -24,7 +26,7 @@
             <div> <!-- display vacio, lo sacamos o lo dejamos por consistencia -->
             </div>
         </div>
-        <div class="row"> <!-- La lista de cursos con sus notas van aqui -->
+        <div class="row ml-2"> <!-- La lista de cursos con sus notas van aqui -->
             <div>
                 <table>
                     <tr> <!-- colspan del td 1 para datos, 2 para notas-->

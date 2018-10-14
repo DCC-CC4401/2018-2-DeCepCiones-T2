@@ -14,69 +14,73 @@
                 <img src="recursos/baseBaner.jpg">
                 <a class="navLink" href="#">Inicio</a>
                 <a class="navLink" href="#">Mi Perfil</a>
+                <a class="navLink" href="#">Logout</a>
             </nav>
         </div>
         <div class="row datos"> <!-- Los daños de la coevaluación-->
             <div class="col col-md-5 ml-1"> <!-- display de datos-->
-                <h4 class="datosLabelTitle">Datos de la Coevaluacion</h4>
-                <span class="datosLabel">Curso asociado a coevaluación:</span>  <span class="datosContent">Ingeniria de Software</span> <br>
+                <h1 class="datosLabelTitle"><b>Datos de la Coevaluacion</b></h1>
+                <span class="datosLabel">Curso asociado a coevaluación:</span>  <span class="datosContent">Ingenieria de Software</span> <br>
                 <span class="datosLabel">Estado de la coevaluación:</span>  <span class="datosContent">Abierta</span> <br>
                 <span class="datosLabel">Fecha de inicio de la coevaluación:</span>  <span class="datosContent">20 de Septiembre</span> <br>
                 <span class="datosLabel">Fecha de fín de la coevaluación:</span>  <span class="datosContent">20 de Octubre</span> 
             </div>
             <div class="col col-md-5 ml-1"> <!-- display vacio, lo sacamos o lo dejamos por consistencia -->
-                <h4 class="datosOtroTitle">Herramientas de Gestion</h4>              
-                <span>Actualizar Fecha</span> <br>
+                <center>
+                <h1 class="datosOtroTitle"><b>Herramientas de Gestion</b></h1>              
+                <span><h5><b>Actualizar fecha de la coevaluación: </b></h5></span> 
+              
                 <input type="date" name="cambiarFecha" id="cambiarFecha"><br>
-                <button class="botonMed">Confirmar</button>
+                <button class="botonMed">Confirmar</button>    
+                </center>
             </div>
         </div>
         <hr>
         <div class="row ml-2"> <!-- segundo row, aqui van las tablas que mostramos -->            
             <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
-                <button class="botonLargo">Respondidos</button> <button class="botonLargo">No Respondido</button>
-                <h4>Lista de alumnos</h2>
+                <h3><b>Seleccione coevaluaciones:</b></h3>
+                <button class="botonLargo">Respondidas</button> <button class="botonLargo">No Respondidas</button>
+                <h4><br><b>Lista de alumnos</b></h2>
                 <table class="tablaTarjetas1Linea"> 
                     <tr>
-                        <td>Estudiante 1</td>
+                        <td>Silvio</td>
                     </tr>
                     <tr>
-                        <td>Estudiante 2</td>
+                        <td>Jefferson</td>
                     </tr>
                     <tr>
-                        <td>Estudiante 3</td>
+                        <td>Cecilia</td>
                     </tr>
                     <tr>
-                        <td>Estudiante 4</td>
+                        <td>Vayron</td>
                     </tr>
                     <tr>
-                        <td>Estudiante 4</td>
+                        <td>Ninoska</td>
                     </tr>
                     <tr>
-                        <td>Estudiante 4</td>
+                        <td>Brayatan</td>
                     </tr>
                     <tr>
-                        <td>Estudiante 4</td>
-                    </tr>
-                    <tr>
-                        <td>Estudiante 4</td>
-                    </tr>                    
+                        <td>Uldaricio</td>
+                    </tr>               
                 </table>
             </div>
-            
+        
             <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
                 <table> <!-- Lista de coevaluaciones -->
                     <tr>
                         
                         <td>
                             <form action="#">
-                                    <label for="rol">Seleccione al compañero que evaluó el estudiante: </label>
+                                    <label for="rol"><h4><b>Seleccione el compañero evaluado por Estudiante 1:</b> </h4></label>
+                                    <br>
                                     <select name="rol" id="nuevoRol">
-                                    <option value="">Compañero 1</option>
-                                    <option value="">Compañero 2</option>
+                                    <option value="">Raúl</option>
+                                    <option value="">Matías</option>
                                 </select> <br>
                 
                                     </form>
+                            <span><h5><br><b>Respuestas.</b></h5> </span>
                             <span>Pregunta 1. Nota: </span><br>
                             <span>Pregunta 2. Nota: </span><br>
                             <span>Pregunta 3. Nota: </span><br>

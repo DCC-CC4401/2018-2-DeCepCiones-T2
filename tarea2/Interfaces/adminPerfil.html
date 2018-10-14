@@ -5,25 +5,28 @@
     <title>Mi Perfil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="style/main.css" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid"> <!-- este es el container de la pag, para que boostrap pueda controlar el tamaño de todos los elementos-->
-        <div class="row"> 
+        <div class="row navBar"> 
             <nav class="col col-sm-12"> 
                 <img src="recursos/baseBaner.jpg">
-                <a href="#">Inicio</a>
-                <a href="#">Mi Perfil</a>
+                <a class="navLink" href="#">Inicio</a>
+                <a class="navLink" href="#">Mi Perfil</a>
+                <a class="navLink" href="#">Logout</a>
             </nav>
         </div>
-        <div class="row"> <!-- los datos del dueño del perfil-->
+        <div class="row datos"> <!-- los datos del dueño del perfil-->
             <div> <!-- display de datos-->
-                <span>Otto Estudiante Connom Brecompleto</span> <br>
-                <span>55222333-0</span> <br>
-                <span>correo@direccion.dom</span> <br>
+                 <h1 class="datosLabelTitle"><b>Datos del usuario</b></h1>
+                <span class="datosLabel">Nombre: Matías Ignacio Rojas Gallegos</span> <br>
+                <span class="datosLabel">Rut: 19.359.568-5</span> <br>
+                <span class="datosLabel">Correo: matirojasga@gmail.com</span> <br>
+                
             </div>
-            <div> <!-- cambiar rol -->
-                <form action="#">
-                    <label for="rol">Nuevo Rol: </label>
+        <center><form action="#">
+                    <label for="rol"><h5><b>Nuevo Rol: </b></h5></label>
                     <select name="rol" id="nuevoRol">
                         <option value="">Selecciona un Rol</option>
                         <option value="Estudiante">Estudiante</option>
@@ -33,13 +36,16 @@
                     </select> <br>
                     <input type="submit" value="Cambiar">
                 </form>
-            </div>
+        </center>
         </div>
+
         <div class="row"> <!-- La lista de cursos con sus notas van aqui -->
             <div>
                 <table>
+                    <h3><b>Lista de cursos:</b></h3>
                     <tr>                 
                         <td> <!-- colspan del td 1 para datos, 2 para notas-->
+
                             <span>Ingenieria de Software </span> <span>Sec 1, 2018 Primavera</span><br>
                             <span>Docente</span>
                         </td>
