@@ -15,6 +15,72 @@
                 <a href="#">Mi Perfil</a>
             </nav>
         </div>
+        <div class="row"> <!-- Los daños de la coevaluación-->
+            <div> <!-- display de datos-->
+                <span>Curso asociado a coevaluación: ..</span> <br>
+                <span>Estado de la coevaluación: ..</span> <br>
+                <span>Fecha de inicio de la coevaluación:.. </span> <br>
+                <span>Fecha de fín de la coevaluación:..</span> <br>
+                <button>Actualizar Fecha</button> <input type="date" name="cambiarFecha" id="cambiarFecha"> <button>Confirmar</button>
+            </div>
+            <div> <!-- display vacio, lo sacamos o lo dejamos por consistencia -->
+            </div>
+        </div>
     </div>
+    <hr>
+        <div class="row ml-2"> <!-- segundo row, aqui van las tablas que mostramos -->
+            
+            <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
+                <table class="Alumnos"> 
+                    <tr>
+                        <td>
+                             <form action="#">
+                                <label for="rol">Ver encuestas: </label>
+                                <select name="rol" id="nuevoRol">
+                                <option value="">Respondidas</option>
+                                <option value="">No respondidas</option>
+                               </select> <br>
+              
+                                </form>
+                            <span>- Estudiante 1</span><br>
+                            <span>- Estudiante 2</span><br>
+                            <span>- Estudiante 3</span><br>
+                            <span>- Estudiante 4</span><br>
+                            <span>- Estudiante 5</span><br>
+                            <span>- Estudiante 6</span><br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
+                <table> <!-- Lista de coevaluaciones -->
+                    <tr>
+                        <form action="#">
+                                <label for="rol">Seleccione al compañero que evaluó el estudiante: </label>
+                                <select name="rol" id="nuevoRol">
+                                <option value="">Compañero 1</option>
+                                <option value="">Compañero 2</option>
+                               </select> <br>
+              
+                                </form>
+                        <td>
+                        <span>Pregunta 1. Nota: </span><br>
+                        <span>Pregunta 2. Nota: </span><br>
+                        <span>Pregunta 3. Nota: </span><br>
+                        <span>Pregunta 4. Nota: </span><br>
+                        <span>Pregunta 5. Nota: </span><br>
+                        <span>Pregunta 6. Nota: </span><br> 
+                        <span>Pregunta 7. Nota: </span><br>
+                        <span>Pregunta 8. Nota: </span><br>
+                        <span>Fortalezas: </span><br>
+                        <span>Debilidades: </span><br> 
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+        <hr>
 </body>
 </html>
