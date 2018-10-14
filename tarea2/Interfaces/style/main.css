@@ -1,13 +1,15 @@
 div.navBar {
     background-color: #2b2a2ab8;
+    padding:5px 0px 5px 0px;
 }
 
 div.datos {
     background-color: mediumseagreen;
+    padding:20px 0px 20px 0px;
 }
 
 div.content {
-
+    padding:10px 0px 10px 0px;
 }
 
 a.navLink {
@@ -15,6 +17,9 @@ a.navLink {
     margin: 30px 30px 0px 15px;
 }
 
+h4.datosLabelTitle {    
+    margin:0px 0px 10px 25px;
+}
 span.datosLabel {
     margin:0px 0px 0px 25px;
     color: brown;
@@ -22,6 +27,9 @@ span.datosLabel {
     font-weight: bold;
 }
 
+h4.datosOtroTitle {    
+    margin:0px 0px 10px 0px;
+}
 span.datosContent {
     margin:0px 0px 0px 15px;
     color: brown;
