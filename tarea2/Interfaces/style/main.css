@@ -1,0 +1,57 @@
+div.navBar {
+    background-color: #2b2a2ab8;
+}
+
+div.datos {
+    background-color: mediumseagreen;
+}
+
+div.content {
+
+}
+
+a.navLink {
+    font-size: 35px;
+    margin: 30px 30px 0px 15px;
+}
+
+span.datosLabel {
+    margin:0px 0px 0px 25px;
+    color: brown;
+    font-size: large;
+    font-weight: bold;
+}
+
+span.datosContent {
+    margin:0px 0px 0px 15px;
+    color: brown;
+    font-size: medium;
+    font-weight: 400;
+}
+
+button.botonMed {
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+button.botonLargo {
+    margin:0px 5px 0px 5px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    height: 40px;
+    width: 150px;
+}
+
+table.tablaTarjetas1Linea {
+    
+}
+
+table.tablaTarjetas1Linea tr {
+}
+
+table.tablaTarjetas1Linea td {
+
+}
