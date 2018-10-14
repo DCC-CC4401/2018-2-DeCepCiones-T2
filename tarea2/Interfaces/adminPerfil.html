@@ -8,14 +8,52 @@
 </head>
 <body>
     <div class="container-fluid"> <!-- este es el container de la pag, para que boostrap pueda controlar el tamaño de todos los elementos-->
-        <div class="row"> <!-- primera row de la pagina, no se si sea necesario este wraper pero si sobra no importa -->
+        <div class="row"> 
             <nav class="col col-sm-12"> 
                 <img src="recursos/baseBaner.jpg">
                 <a href="#">Inicio</a>
                 <a href="#">Mi Perfil</a>
             </nav>
         </div>
+        <div class="row"> <!-- los datos del dueño del perfil-->
+            <div> <!-- display de datos-->
+                <span>Otto Estudiante Connom Brecompleto</span> <br>
+                <span>55222333-0</span> <br>
+                <span>correo@direccion.dom</span> <br>
+            </div>
+            <div> <!-- cambiar rol -->
+                <form action="#">
+                    <label for="rol">Nuevo Rol: </label>
+                    <select name="rol" id="nuevoRol">
+                        <option value="">Selecciona un Rol</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Profesor">Docente</option>
+                        <option value="Auxiliar">Auxiliar</option>
+                        <option value="Ayudante">Ayudante</option>
+                    </select> <br>
+                    <input type="submit" value="Cambiar">
+                </form>
+            </div>
+        </div>
+        <div class="row"> <!-- La lista de cursos con sus notas van aqui -->
+            <div>
+                <table>
+                    <tr>                 
+                        <td> <!-- colspan del td 1 para datos, 2 para notas-->
+                            <span>Ingenieria de Software </span> <span>Sec 1, 2018 Primavera</span><br>
+                            <span>Docente</span>
+                        </td>
+                    </tr>
 
+                    <tr>
+                        <td>
+                            <span>Ingenieria de Software</span> <span>Sec 1 2018 Primavera</span><br>
+                            <span>Estudiante</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
 </body>
 </html>
