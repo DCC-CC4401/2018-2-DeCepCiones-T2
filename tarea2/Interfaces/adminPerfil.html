@@ -17,40 +17,38 @@
         </div>
         <div class="row"> <!-- los datos del dueño del perfil-->
             <div> <!-- display de datos-->
-                <span>Este Esun Nombre Completo</span> <br>
-                <span>11222333-0</span> <br>
+                <span>Otto Estudiante Connom Brecompleto</span> <br>
+                <span>55222333-0</span> <br>
                 <span>correo@direccion.dom</span> <br>
             </div>
-            <div> <!-- display de controles-->
-                <button>Cambiar Contraseña</button>
+            <div> <!-- cambiar rol -->
                 <form action="#">
-                    <label for="actual">Contraseña Actual</label> <input type="pasword" name="actual" id="actual"> <br>
-                    <label for="nueva">Contraseña Nueva</label> <input type="pasword" name="nueva" id="nueva"> <br>
-                    <label for="nuevaRep">Contraseña Nueva</label> <input type="pasword" name="nuevaRep" id="nuevaRep">
+                    <label for="rol">Nuevo Rol: </label>
+                    <select name="rol" id="nuevoRol">
+                        <option value="">Selecciona un Rol</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Profesor">Docente</option>
+                        <option value="Auxiliar">Auxiliar</option>
+                        <option value="Ayudante">Ayudante</option>
+                    </select> <br>
+                    <input type="submit" value="Cambiar">
                 </form>
             </div>
         </div>
         <div class="row"> <!-- La lista de cursos con sus notas van aqui -->
             <div>
                 <table>
-                    <tr> <!-- colspan del td 1 para datos, 2 para notas-->
-                        <td>
-                            <span>Ingenieria de Software </span><br>
-                            <span>Sec 1, 2018 Primavera</span><br>
+                    <tr>                 
+                        <td> <!-- colspan del td 1 para datos, 2 para notas-->
+                            <span>Ingenieria de Software </span> <span>Sec 1, 2018 Primavera</span><br>
                             <span>Docente</span>
                         </td>
-                        <td> No hay notas registradas para este curso.</td>
                     </tr>
 
                     <tr>
                         <td>
-                            <span>Ingenieria de Software II </span><br>
-                            <span>Sec 1 2018 Primavera</span><br>
+                            <span>Ingenieria de Software</span> <span>Sec 1 2018 Primavera</span><br>
                             <span>Estudiante</span>
-                        </td>
-                        <td>
-                            <Span> Notas </Span> <br>
-                            <span> Coev 1:</span> <span>7.0</span> <span> Coev 2:</span> <span>6.0</span> <span> Coev 3:</span> <span>4.0</span>
                         </td>
                     </tr>
                 </table>
