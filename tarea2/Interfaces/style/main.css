@@ -1,13 +1,13 @@
 body {
-    background-color: #61afd9;
+    background-color: #6D909C;
 }
 div.navBar {
-    background-color: #0B2161;
+    background-color: #000515;
     padding:5px 0px 5px 0px;
 }
 
 div.datos {
-    background-color: #01A9DB;
+    background-color: #252C3F;
     padding:20px 0px 20px 0px;
 }
 
@@ -16,45 +16,38 @@ div.content {
 }
 
 div.footer {
-    background-color: #00EBFF;
     padding: 10px 0px 20px 0px;
 }
-/* porque esta esto? 
-div.ml-2 {
-    background-color: #61afd9;
-    padding:5px 0px 5px 0px;
-}
-*/
+
 a.navLink {
     font-size: 35px;
     margin: 30px 30px 0px 15px;
     color: white;
 }
 
-h4.datosLabelTitle {    
-    margin:0px 0px 10px 25px;
-    color: black;
+h1.datosLabelTitle {    
+    margin:0px 0px 10px 5px;
+    color: white;
     font-size: large;
     font-weight: bold;
 }
 span.datosLabel {
-    margin:0px 0px 0px 25px;
-    color: black;
+    margin:0px 0px 0px 5px;
+    color: white;
     font-size: large;
     font-weight: bold;
 }
 
-h4.datosOtroTitle {    
+h1.datosOtroTitle {    
     margin:0px 0px 10px 25px;
-    color: black;
+    color: white;
     font-size: large;
     font-weight: bold;
 }
 span.datosContent {
     margin:0px 0px 0px 15px;
     color: white;
-    font-size: large;
-    font-weight: bold;
+   
 }
 
 button.botonPeq, input.botonPeq {
@@ -112,7 +105,7 @@ div.cursoResumenAdmin {
 
 div.cursoResumen:hover {
     border: orange solid 3px;
-    background-color: aqua;
+ 
 }
 
 div.cursoResumenAdmin:hover {
@@ -131,7 +124,7 @@ div.cursoResumenLeftHover {
     border-top: orange solid 3px;
     border-left: orange solid 3px;
     border-bottom: orange solid 3px;
-    background-color: aqua;
+
 }
 
 div.cursoResumenRight {
