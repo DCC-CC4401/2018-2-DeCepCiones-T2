@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container-fluid"> <!-- este es el container de la pag, para que boostrap pueda controlar el tamaño de todos los elementos-->
-        <div class="row"> 
+        <div class="row navBar"> 
             <nav class="col col-sm-12"> 
                 <img src="recursos/baseBaner.jpg">
                 <a class="navLink" href="#">Inicio</a>
@@ -18,31 +18,38 @@
             </nav>
         </div>
         <div class="row datos"> <!-- los datos del dueño del perfil-->
-            <div> <!-- display de datos-->
-                <span>Este Esun Nombre Completo</span> <br>
-                <span>11222333-0</span> <br>
-                <span>correo@direccion.dom</span> <br>
+            <div class="col col-md-5"> <!-- display de datos-->
+                <h4 class="datosLabelTitle">Datos del usuario</h4>
+                <span class="datosLabel">Nombre:</span> <span class="datosContent">Alex Javier Alvare Toledo</span> <br>
+                <span class="datosLabel">Rut:</span> <span class="datosContent"> 11.111.111-5</span> <br>
+                <span class="datosLabel">Correo:</span> <span class="datosContent"> correo@gmail.com</span> <br>
             </div>
             <div> <!-- display vacio, lo sacamos o lo dejamos por consistencia -->
             </div>
         </div>
-        <div class="row ml-2"> <!-- La lista de cursos con sus notas van aqui -->
-            <div>
-                <table>
-                    <tr> <!-- colspan del td 1 para datos, 2 para notas-->
-                        <td>
-                            <span>Ingenieria de Software </span><br>
-                            <span>Sec 1, 2018 Primavera</span><br>
-                            <span>Docente</span>
-                        </td>
-                        <td>
-                            <Span> Notas </Span> <br>
-                            <span> Coev 1:</span> <span>7.0</span> <span> Coev 2:</span> <span>6.0</span> <span> Coev 3:</span> <span>4.0</span>
-                        </td>
-                    </tr>
-                </table>
+        <!-- Los datos de la vista -->
+        <div class="row ml-2 "> <!-- La lista de cursos con sus notas van aqui -->
+            <div class="col col-md-2 cursoResumenLeft" id="celdaLeft1" onmouseover="miMouseOver(1)" onmouseout="miMouseOut(1)">
+                <span>Ingenieria de Software I </span><br>
+                <span>Sec 1, 2018 Primavera</span><br>
+                <span>Alumno</span>
+            </div>
+            <div class="col col-md-5 cursoResumenRight" id="celdaRight1" onmouseover="miMouseOver(1)" onmouseout="miMouseOut(1)">
+                <Span> Notas </Span> <br>
+                <span> Coev 1:</span> <span>7.0</span> <span> Coev 2:</span> <span>6.0</span> <span> Coev 3:</span> <span>4.0</span>
             </div>
         </div>
     </div>
 </body>
+<script type="text/javascript">
+function miMouseOver(key){
+    document.getElementById("celdaLeft"+key).classList.add("cursoResumenLeftHover");
+    document.getElementById("celdaRight"+key).classList.add("cursoResumenRightHover");
+}
+
+function miMouseOut(key){
+    document.getElementById("celdaLeft"+key).classList.remove("cursoResumenLeftHover");
+    document.getElementById("celdaRight"+key).classList.remove("cursoResumenRightHover");
+}
+</script>
 </html>

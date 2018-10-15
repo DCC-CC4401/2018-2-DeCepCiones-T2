@@ -18,43 +18,57 @@
             </nav>
         </div>
         <div class="row datos"> <!-- los datos del dueño del perfil-->
-            <div> <!-- display de datos-->
-                 <h1 class="datosLabelTitle"><b>Datos del usuario</b></h1>
-                <span class="datosLabel">Nombre: Matías Ignacio Rojas Gallegos</span> <br>
-                <span class="datosLabel">Rut: 19.359.568-5</span> <br>
-                <span class="datosLabel">Correo: matirojasga@gmail.com</span> <br>
-                
+            <div class="col col-md-5"> <!-- display de datos-->
+                <h4 class="datosLabelTitle"><b>Datos del usuario</b></h1>
+                <span class="datosLabel">Nombre:</span> <span class="datosContent">Matías Ignacio Rojas Gallegos</span> <br>
+                <span class="datosLabel">Rut:</span> <span class="datosContent"> 19.359.568-5</span> <br>
+                <span class="datosLabel">Correo:</span> <span class="datosContent"> matirojasga@gmail.com</span> <br>                
             </div>
-        <center><form action="#">
-                    <label for="rol"><h5><b>Nuevo Rol: </b></h5></label>
-                    <select name="rol" id="nuevoRol">
-                        <option value="">Selecciona un Rol</option>
-                        <option value="Estudiante">Estudiante</option>
-                        <option value="Profesor">Docente</option>
-                        <option value="Auxiliar">Auxiliar</option>
-                        <option value="Ayudante">Ayudante</option>
-                    </select> <br>
-                    <input type="submit" value="Cambiar">
-                </form>
-        </center>
+            <div class="col col-md-5"><!-- display de gestion-->
+            </div>
         </div>
 
         <div class="row"> <!-- La lista de cursos con sus notas van aqui -->
-            <div>
+            <div class="col col-md-10 ml-3">
                 <table>
                     <h3><b>Lista de cursos:</b></h3>
                     <tr>                 
                         <td> <!-- colspan del td 1 para datos, 2 para notas-->
-
-                            <span>Ingenieria de Software </span> <span>Sec 1, 2018 Primavera</span><br>
-                            <span>Docente</span>
+                            <div class="cursoResumenAdmin">
+                                <span>Ingenieria de Software </span> <span>Sec 1, 2018 Primavera</span><br>
+                                <span>Docente</span> <br>                                    
+                                <form action="#"></form>
+                                    <select name="rol" id="nuevoRol">
+                                        <option value="">Selecciona un Rol</option>
+                                        <option value="Estudiante">Estudiante</option>
+                                        <option value="Profesor">Docente</option>
+                                        <option value="Auxiliar">Auxiliar</option>
+                                        <option value="Ayudante">Ayudante</option>
+                                    </select>
+                                    <input type="submit" value="Cambiar" class="botonMed">
+                                </form>
+                                <button class="botonLargo">Sacar del Curso</button>
+                            </div>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <span>Ingenieria de Software</span> <span>Sec 1 2018 Primavera</span><br>
-                            <span>Estudiante</span>
+                            <div class="cursoResumenAdmin">
+                                <span>Ingenieria de Software</span> <span>Sec 1 2018 Primavera</span><br>
+                                <span>Estudiante</span> <br>                                    
+                                <form action="#"></form>
+                                    <select name="rol" id="nuevoRol">
+                                        <option value="">Selecciona un Rol</option>
+                                        <option value="Estudiante">Estudiante</option>
+                                        <option value="Profesor">Docente</option>
+                                        <option value="Auxiliar">Auxiliar</option>
+                                        <option value="Ayudante">Ayudante</option>
+                                    </select>
+                                    <input type="submit" value="Cambiar" class="botonMed">
+                                </form>
+                                <button class="botonLargo">Sacar del Curso</button>
+                            </div>
                         </td>
                     </tr>
                 </table>

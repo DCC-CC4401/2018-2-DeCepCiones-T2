@@ -14,17 +14,24 @@ div.datos {
 div.content {
     padding:10px 0px 10px 0px;
 }
+
+div.footer {
+    background-color: #00EBFF;
+    padding: 10px 0px 20px 0px;
+}
+/* porque esta esto? 
 div.ml-2 {
     background-color: #61afd9;
     padding:5px 0px 5px 0px;
 }
+*/
 a.navLink {
     font-size: 35px;
     margin: 30px 30px 0px 15px;
     color: white;
 }
 
-h1.datosLabelTitle {    
+h4.datosLabelTitle {    
     margin:0px 0px 10px 25px;
     color: black;
     font-size: large;
@@ -37,7 +44,7 @@ span.datosLabel {
     font-weight: bold;
 }
 
-h1.datosOtroTitle {    
+h4.datosOtroTitle {    
     margin:0px 0px 10px 25px;
     color: black;
     font-size: large;
@@ -50,32 +57,109 @@ span.datosContent {
     font-weight: bold;
 }
 
+button.botonPeq, input.botonPeq {
+    border-radius: 10px;
+    background-color: #0404B4;
+    color: white;
+    height: 40px;
+    width: 60px;
+}
 
-
-button.botonMed {
+button.botonMed, input.botonMed {
     border-radius: 10px;
     background-color: #0404B4;
     color: white;
     height: 40px;
     width: 100px;
 }
-button.botonLargo {
-    margin:0px 5px 0px 5px;
+
+button.botonLargo, input.botonLargo {
+    border-radius: 10px;
+    background-color: #0404B4;
+    color: white;
+    height: 40px;
+    width: 150px;
+}
+
+button.botonGrand, input.botonGrand {
+    border-radius: 10px;
+    background-color: #0404B4;
+    color: white;
+    height: 80px;
+    width: 200px;
+}
+
+button.botonMuyLargo, input.botonMuyLargo {
     border-radius: 10px;
     background-color: #0404B4;
     color: white;
     height: 30px;
-    width: 150px;
+    width: 250px;
 }
 
 
-table.tablaTarjetas1Linea {
-    
+div.cursoResumen {
+    border: black solid 3px;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
 
-table.tablaTarjetas1Linea tr {
+div.cursoResumenAdmin {
+    border: black solid 3px;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
 
-table.tablaTarjetas1Linea td {
+div.cursoResumen:hover {
+    border: orange solid 3px;
+    background-color: aqua;
+}
+
+div.cursoResumenAdmin:hover {
+    border: orange solid 3px;
+}
+/** ------- div para border de tablas con 2 columnas */
+div.cursoResumenLeft {
+    border-top: black solid 3px;
+    border-left: black solid 3px;
+    border-bottom: black solid 3px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px 10px;
+}
+
+div.cursoResumenLeftHover {
+    border-top: orange solid 3px;
+    border-left: orange solid 3px;
+    border-bottom: orange solid 3px;
+    background-color: aqua;
+}
+
+div.cursoResumenRight {
+    border-top: black solid 3px;
+    border-right: black solid 3px;
+    border-bottom: black solid 3px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px 10px;
+}
+
+div.cursoResumenRightHover {
+    border-top: orange solid 3px;
+    border-right: orange solid 3px;
+    border-bottom: orange solid 3px;
+    background-color: aqua;
+}
+
+/* Clases de alineamiento y margenes */
+.leftAling {
+    position: relative;
+    margin: 0 55%;
+}
+
+.pequeñoTopDown {
+    margin: 5px 0px 5px 0px;
+}
+
+.pequeñoLeftRight {
+    margin:0px 5px 0px 5px;
 
 }

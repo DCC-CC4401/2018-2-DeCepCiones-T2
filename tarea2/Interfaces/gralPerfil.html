@@ -17,47 +17,57 @@
                 <a class="navLink" href="#">Logout</a>
             </nav>
         </div>
-        <div class="row"> <!-- los datos del dueño del perfil-->
-            <div> <!-- display de datos-->
-                <span>Este Esun Nombre Completo</span> <br>
-                <span>11222333-0</span> <br>
-                <span>correo@direccion.dom</span> <br>
+        <div class="row datos"> <!-- los datos del dueño del perfil-->
+            <div class="col col-md-5"> <!-- display de datos-->
+                <h1 class="datosLabelTitle"><b>Datos del usuario</b></h1>
+                <span class="datosLabel">Nombre:</span> <span class="datosContent">Matías Ignacio Rojas Gallegos</span> <br>
+                <span class="datosLabel">Rut:</span> <span class="datosContent"> 19.359.568-5</span> <br>
+                <span class="datosLabel">Correo:</span> <span class="datosContent"> matirojasga@gmail.com</span> <br>
             </div>
-            <div> <!-- display de controles-->
-                <button>Cambiar Contraseña</button>
+            <div class="col col-md-5"> <!-- display de controles-->
+                <button class="botonMuyLargo">Cambiar Contraseña</button>
                 <form action="#">
                     <label for="actual">Contraseña Actual</label> <input type="pasword" name="actual" id="actual"> <br>
                     <label for="nueva">Contraseña Nueva</label> <input type="pasword" name="nueva" id="nueva"> <br>
-                    <label for="nuevaRep">Contraseña Nueva</label> <input type="pasword" name="nuevaRep" id="nuevaRep">
+                    <label for="nuevaRep">Contraseña Nueva</label> <input type="pasword" name="nuevaRep" id="nuevaRep"> <br>
+                    <input type="submit" name="submit" id="submit" class="botonMed">
                 </form>
             </div>
         </div>
-        <div class="row"> <!-- La lista de cursos con sus notas van aqui -->
-            <div>
-                <table>
-                    <tr> <!-- colspan del td 1 para datos, 2 para notas-->
-                        <td>
-                            <span>Ingenieria de Software </span><br>
-                            <span>Sec 1, 2018 Primavera</span><br>
-                            <span>Docente</span>
-                        </td>
-                        <td> No hay notas registradas para este curso.</td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <span>Ingenieria de Software II </span><br>
-                            <span>Sec 1 2018 Primavera</span><br>
-                            <span>Estudiante</span>
-                        </td>
-                        <td>
-                            <Span> Notas </Span> <br>
-                            <span> Coev 1:</span> <span>7.0</span> <span> Coev 2:</span> <span>6.0</span> <span> Coev 3:</span> <span>4.0</span>
-                        </td>
-                    </tr>
-                </table>
+        <!-- La lista de cursos con sus notas van aqui -->
+        <div class="row mt-2"> <!-- colspan del td 1 para datos, 2 para notas-->
+            <div class="col col-md-2 ml-2 cursoResumenLeft" id="celdaLeft1" onmouseover="miMouseOver(1)" onmouseout="miMouseOut(1)">
+                <span>Ingenieria de Software </span><br>
+                <span>Sec 1, 2018 Primavera</span><br>
+                <span>Docente</span>
             </div>
+            <div class="col col-md-5 cursoResumenRight" id="celdaRight1" onmouseover="miMouseOver(1)" onmouseout="miMouseOut(1)">
+                No hay notas registradas para este curso.
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col col-md-2 ml-2 cursoResumenLeft" id="celdaLeft2" onmouseover="miMouseOver(2)" onmouseout="miMouseOut(2)">
+                <span>Ingenieria de Software II </span><br>
+                <span>Sec 1 2018 Primavera</span><br>
+                <span>Estudiante</span>
+            </div>
+            <div class="col col-md-5 cursoResumenRight" id="celdaRight2" onmouseover="miMouseOver(2)" onmouseout="miMouseOut(2)">
+                <Span> Notas </Span> <br>
+                <span> Coev 1:</span> <span>7.0</span> <span> Coev 2:</span> <span>6.0</span> <span> Coev 3:</span> <span>4.0</span>
+            </div>
+                
         </div>
     </div>
 </body>
+<script type="text/javascript">
+function miMouseOver(key){
+    document.getElementById("celdaLeft"+key).classList.add("cursoResumenLeftHover");
+    document.getElementById("celdaRight"+key).classList.add("cursoResumenRightHover");
+}
+
+function miMouseOut(key){
+    document.getElementById("celdaLeft"+key).classList.remove("cursoResumenLeftHover");
+    document.getElementById("celdaRight"+key).classList.remove("cursoResumenRightHover");
+}
+</script>
 </html>

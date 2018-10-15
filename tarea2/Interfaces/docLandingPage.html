@@ -16,76 +16,90 @@
                 <a class="navLink" href="#">Mi Perfil</a>
                 <a class="navLink" href="#">Logout</a>
         </div>
-        <div class="row datos"> <!-- segundo row, aqui van las tablas que mostramos -->
+        <div class="row"> <!-- segundo row, aqui van las tablas que mostramos -->
             
-            <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
+            <div class="col col-md-2"> <!-- este div es para definir el espacio que puede usar la tabla -->
+                <h4>Lista de Cursos</h4>
                 <table class="resumentcursos"> <!-- Lista de cursos-->
                     <tr>
                         <td>
-                            <span>Ingenieria de Software </span><br>
-                            <span>Sec 1 2018 Primavera</span><br>
-                            <span>Docente</span>
+                            <div class="cursoResumen">
+                                <span>Ingenieria de Software </span><br>
+                                <span>Sec 1 2018 Primavera</span><br>
+                                <span>Docente</span>
+                            </div>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <span>Ingenieria de Software II </span><br>
-                            <span>Sec 1 2018 Primavera</span><br>
-                            <span>Estudiante</span>
+                            <div class="cursoResumen">
+                                <span>Ingenieria de Software II </span><br>
+                                <span>Sec 1 2018 Primavera</span><br>
+                                <span>Estudiante</span>
+                            </div>
                         </td>
                     </tr>
                 </table>
             </div>
             
-            <div class="col col-md-5"> <!-- este div es para definir el espacio que puede usar la tabla -->
+            <div class="col col-md-4"> <!-- este div es para definir el espacio que puede usar la tabla -->
+                <h4>Ultimas 10 Coevaluaciones</h4>
                 <table> <!-- Lista de coevaluaciones -->
                     <tr>
                         <td>
-                            <span>Ingenieria de Software </span> <span>Abierto</span> <br>
-                            <span>20 de Octubre a 30 de Octubre</span> <br>
-                            <button>Cambiar Fecha</button><button>Publicar</button>
+                            <div class="cursoResumen">
+                                <span>Ingenieria de Software </span> <span>Abierto</span> <br>
+                                <span>20 de Octubre a 30 de Octubre</span> <br>
+                                <input type="date" name="cambiarFecha" id="cambiarFecha"> <button class="botonLargo">Confirmar Fecha</button>
+                                <button class="botonMed">Publicar</button>
+                            </div>
                         </td>
                     </tr>
                     
                     <tr>
                         <td>
-                            <span>Ingenieria de Software II </span> <span>Cerrado</span> <br>
-                            <span>19 de Octubre a 29 de Octubre</span> <br>
-                            <button>Cambiar Fecha</button> <input type="date" name="cambiarFecha" id="cambiarFecha"> <button>Confirmar</button>
-                            </span> <button>Publicar</button>
+                            <div class="cursoResumen">
+                                <span>Ingenieria de Software II </span> <span>Cerrado</span> <br>
+                                <span>19 de Octubre a 29 de Octubre</span> <br>
+                                <input type="date" name="cambiarFecha" id="cambiarFecha"> <button class="botonLargo">Confirmar Fecha</button>
+                                </span> <button class="botonMed">Publicar</button>
+                            </div>
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
-        <div> <!-- Aqui va el footer cunado entras como admin, solo referencia -->
-            <div class="row ml-2"> <!-- row para buscar usuario-->
-                <form action="#" class="col col-md-10">
-                    <input type="text" name="idEstudiante" id="idEstudiante">
-                    <input type="submit" value="Buscar">
-                </form>
-            </div>
-            <div class="row ml-2"> <!-- row para formularios -->
-                <div class="col col-md-5"> <!-- Formulario para agregar Cursos -->             
-                    <button>Agregar Curso</button>
-                    <form action="#">
-                        <label for="nombreCurso">Nombre</label> <input type="text" name="nombreCursos" id="nombreCurso"> <br>
-                        <label for="codigoCurso">Codigo Curso</label> <input type="text" name="codigoCurso" id="codigoCurso"> <br>
-                        <label for="fechasCurso">Datos Fechas</label> <input type="text" name="fechasCurso" id="fechasCurso"> <br>                        
-                        <input type="submit" value="Subir">
+        <!-- Aqui va el footer cunado entras como admin, solo referencia -->
+        <div class="row fixed-bottom footer">
+            <div class="col">
+                <div class="row"> <!-- row para buscar usuario-->
+                    <form action="#" class="col col-md-4 mt-2 ml-2">
+                        <input type="text" name="idEstudiante" id="idEstudiante">
+                        <input type="submit" class="botonLargo" value="Buscar Estudiante" >
                     </form>
                 </div>
-                <div class="col col-md-5"> <!-- Formulario para agregar Cursos -->
-                    <button>Agregar Coevaluación</button>
-                    <form action="#">
-                        <label for="cursoCoev">Nombre</label> <input type="text" name="cursoCoev" id="cursoCoev"> <br>
-                        <label for="fechaCoev">Fechas Final</label> <input type="text" name="fechaCoev" id="fechaCoev"> <br>                        
-                        <input type="submit" value="Subir">
-                    </form>
+                <div class="row"> <!-- row para formularios -->
+                    <div class="col col-md-3 ml-2"> <!-- Formulario para agregar Cursos -->             
+                        <h5>Agregar Curso</h5>
+                        <form action="#">
+                            <label for="nombreCurso">Nombre</label> <input type="text" name="nombreCursos" id="nombreCurso"> <br>
+                            <label for="codigoCurso">Codigo Curso</label> <input type="text" name="codigoCurso" id="codigoCurso"> <br>
+                            <label for="fechasCurso">Datos Fechas</label> <input type="text" name="fechasCurso" id="fechasCurso"> <br>                        
+                            <input type="submit" class="botonPeq" value="Subir">
+                        </form>
+                    </div>
+                    <div class="col col-md-3"> <!-- Formulario para agregar Cursos -->
+                        <h5>Agregar Coevaluación</h5>
+                        <form action="#">
+                            <label for="cursoCoev">Nombre</label> <input type="text" name="cursoCoev" id="cursoCoev"> <br>
+                            <label for="fechaCoev">Fechas Final</label> <input type="text" name="fechaCoev" id="fechaCoev"> <br>                        
+                            <input type="submit" class="botonPeq" value="Subir">
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </div> 
+        </div>     
     </div>
 </body>
 </html>
