@@ -18,9 +18,9 @@
         </div>
         <div class="row datos"> <!-- segundo row, aqui van las tablas que mostramos -->
             
-            <div class="col col-md-2"> <!-- este div es para definir el espacio que puede usar la tabla -->
-                <br><br><h1 class="datosLabelTitle">Lista de Cursos</h1>
-                <table class="resumentcursos"> <!-- Lista de cursos-->
+            <div class="col col-md-4"> <!-- este div es para definir el espacio que puede usar la tabla -->
+                <br><h1 class="datosLabelTitle">Lista de Cursos</h1>
+                <table> <!-- Lista de cursos-->
                     <tr>
                         <td>
                             <div class="cursoResumen">
@@ -44,7 +44,7 @@
             </div>
             
             <div class="col col-md-4"> <!-- este div es para definir el espacio que puede usar la tabla -->
-                <br><br><h1 class="datosLabelTitle">Ultimas 10 Coevaluaciones</h1>
+                <br><h1 class="datosLabelTitle">Ultimas 10 Coevaluaciones</h1>
                 <table> <!-- Lista de coevaluaciones -->
                     <tr>
                         <td>
@@ -71,7 +71,7 @@
             </div>
         </div>
         <!-- Aqui va el footer cunado entras como admin, solo referencia -->
-        <div class="row fixed-bottom footer">
+        <div class="row footer">
             <div class="col">
                 <div class="row"> <!-- row para buscar usuario-->
                     <form action="#" class="col col-md-4 mt-2 ml-2">
@@ -80,7 +80,7 @@
                     </form>
                 </div>
                 <div class="row"> <!-- row para formularios -->
-                    <div class="col col-md-3 ml-2"> <!-- Formulario para agregar Cursos -->             
+                    <div class="col col-md-4"> <!-- Formulario para agregar Cursos -->             
                         <h5>Agregar Curso</h5>
                         <form action="#">
                             <label for="nombreCurso">Nombre</label> <input type="text" name="nombreCursos" id="nombreCurso"> <br>
@@ -89,7 +89,7 @@
                             <input type="submit" class="botonPeq" value="Subir">
                         </form>
                     </div>
-                    <div class="col col-md-3"> <!-- Formulario para agregar Cursos -->
+                    <div class="col col-md-4"> <!-- Formulario para agregar Cursos -->
                         <h5>Agregar Coevaluación</h5>
                         <form action="#">
                             <label for="cursoCoev">Nombre</label> <input type="text" name="cursoCoev" id="cursoCoev"> <br>
