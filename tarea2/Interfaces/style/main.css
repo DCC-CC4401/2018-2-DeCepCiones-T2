@@ -175,6 +175,10 @@ table.coevCurso td{
     color: black;
 }
 
+span.nombreCoev:hover {
+    color: brown;
+}
+
 table.coevCurso th {
     border: 1px solid #000515;
     padding: 8px;
@@ -184,6 +188,53 @@ table.coevCurso th {
     background-color: mediumseagreen;
     color: black;
 }
+
+table.estudiantesCurso {
+    border-collapse: collapse
+}
+
+table.estudiantesCurso th{
+    border: 1px solid #000515;
+    padding: 8px;
+    background-color: mediumseagreen;
+    color: black;
+}
+
+table.estudiantesCurso td{
+    border: 1px solid #000515;
+    padding: 8px;
+    color: black;
+}
+
+table.equiposCurso {
+    border-collapse: collapse;
+}
+
+table.equiposCurso th{
+    border: 1px solid #000515;
+    padding: 8px;
+    background-color: mediumseagreen;
+    color: black;
+}
+
+table.equiposCurso td{
+    border: 1px solid #000515;
+    padding: 8px;
+    color: black;
+}
+
+table.coevDocCurso {
+    border-collapse: collapse;
+    margin: 10px 0px;
+}
+
+table.coevDocCurso td{
+    border: 1px solid #000515;
+    padding: 8px;
+    color: black;
+}
+
+
 
 /* Clases de alineamiento y margenes */
 .leftAling {
