@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid"> <!-- este es el container de la pag, para que boostrap pueda controlar el tamaño de todos los elementos-->
         <div class="row navBar"> <!-- primera row de la pagina, no se si sea necesario este wraper pero si sobra no importa -->
-            <nav class="col col-sm-12"> 
+            <nav class="col col-lg-12"> 
                 <img src="recursos/a.png">
                 <a class="navLink" href="#">Inicio</a>
                 <a class="navLink" href="#">Mi Perfil</a>
@@ -19,81 +19,203 @@
         </div>
         
         <div class="row datos"> <!-- datos del curso -->
-            <div class="col col-md-10">
+            <div class="col col-lg-3">
                 <h1 class="datosLabelTitle"><b>Datos del curso</b></h1>
                 <span class="datosLabel">Nombre del curso:</span>  <span class="datosContent">Ingenieria de Software</span> <br>
                 <span class="datosLabel">Código del curso:</span>  <span class="datosContent">CC-4401</span> <br>
                 <span class="datosLabel">Sección del curso:</span>  <span class="datosContent">Sec 1 2018 Primavera</span> 
             </div>
+            <div class="col col-lg-3">                
+                <h1 class="datosLabelTitle"><b>Agregar Estudiante</b></h1>
+                <form action="#">
+                    <label for="nombreEstudiante">Nombre: </label> <input type="text" name="nombreEstudiante" id="nombreEstudiante"> <br>
+                    <label for="rutEstudiante">Rut: </label> <input type="text" name="rutEstudiante" id="rutEstudiante"> <br>
+                    <label for="correoEstudiante">Correo: </label> <input type="text" name="correoEstudiante" id="correoEstudiante"> <br>
+                    <input type="submit" name="enviarEstudiante" id="enviarEstudiante" value="Nuevo Estudiante" class="botonLargo">
+                </form>
+            </div>
+            <div class="col col-lg-3">
+                <h1 class="datosLabelTitle"><b>Agregar Equipo</b></h1>
+                <form action="#">
+                    <label for="nombreEquipo">Nombre Equipo: </label> <input type="text" name="nombreEquipo" id="nombreEquipo"> <br>
+                    <label for="integrante1">Integrante: </label> <input type="text" name="integrante1" id="integrante1"> <button class="botonMuyPeq">otro</button> <br>
+                    <label for="integrante2">Integrante: </label> <input type="text" name="integrante2" id="integrante2"> <button class="botonMuyPeq">otro</button> <br>
+                    <input type="submit" name="enviarEstudiante" id="enviarEstudiante" value="Nuevo Estudiante" class="botonLargo">
+                </form>
+            </div>
         </div>
         
-        <div class="row ml-2">
-            <div class="col col-md-4"> <!-- Tabla de estudiantes -->
+        <div class="row ml-1 content">
+            <div class="col-lg-5 col-lg-push-5"> <!-- Tabla de estudiantes -->
                 <br><h1 class="datosLabelTable">Estudiantes</h1>
-                <table class="estudiantesCurso">
-                    <tr>
-                        <th>
-                            <span>Nombre</span>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Alex Álvarez</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Matías Rojas</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Raúl Cid</span>
-                        </td>
-                    </tr>
-                </table>
+                <div class="row">
+                    <div class="col"> 
+                        <div class="row pequeñoTopDown">
+                            <div class="col col-lg-2 cursoResumenLeftHeader">Nombre</div>
+                            <div class="col col-lg-2 cursoResumenCenterHeader">Equipo</div>
+                            <div class="col col-lg-6 cursoResumenRightHeader">Gestion</div>
+                        </div>
+                        <div class="row pequeñoTopDown">
+                            <div class="col col-lg-2 cursoResumenLeft" id="celdaLeftEstudiante1" onmouseover="miMouseOver('Estudiante',1)" onmouseout="miMouseOut('Estudiante',1)">
+                                <span>Alex Alvarez</span>
+                            </div>
+                            <div class="col col-lg-2 cursoResumenCenter"  id="celdaCenterEstudiante1" onmouseover="miMouseOver('Estudiante',1)" onmouseout="miMouseOut('Estudiante',1)">
+                                <span>DeCepCiones</span>
+                            </div>                    
+                            <div class="col col-lg-6 cursoResumenRight" id="celdaRightEstudiante1" onmouseover="miMouseOver('Estudiante',1)" onmouseout="miMouseOut('Estudiante',1)">
+                                <form action="#">
+                                    <select name="cambiarEquipo" id="cambiarEquipo">
+                                        <option value="">Cambiar el equipo</option>
+                                        <option value="noDeCepCiones">noDeCepCiones</option>
+                                        <option value="otroEquipo">otroEquipo</option>
+                                    </select>
+                                    <input type="submit" name="cambiar" id="cambiar" value="Cambiar" class="botonMuyPeqEstirado">
+                                    <button class="botonMuyPeqEstirado">Eliminar</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row pequeñoTopDown">
+                            <div class="col col-lg-2 cursoResumenLeft" id="celdaLeftEstudiante2" onmouseover="miMouseOver('Estudiante',2)" onmouseout="miMouseOut('Estudiante',2)">
+                                <span>Matías Rojas</span>
+                            </div>
+                            <div class="col col-lg-2 cursoResumenCenter"  id="celdaCenterEstudiante2" onmouseover="miMouseOver('Estudiante',2)" onmouseout="miMouseOut('Estudiante',2)">
+                                <span>DeCepCiones</span>
+                            </div>                    
+                            <div class="col col-lg-6 cursoResumenRight" id="celdaRightEstudiante2" onmouseover="miMouseOver('Estudiante',2)" onmouseout="miMouseOut('Estudiante',2)">
+                                <form action="#">
+                                    <select name="cambiarEquipo" id="cambiarEquipo">
+                                        <option value="">Cambiar el equipo</option>
+                                        <option value="noDeCepCiones">noDeCepCiones</option>
+                                        <option value="otroEquipo">otroEquipo</option>
+                                    </select>
+                                    <input type="submit" name="cambiar" id="cambiar" value="Cambiar" class="botonMuyPeqEstirado">
+                                    <button class="botonMuyPeqEstirado">Eliminar</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row pequeñoTopDown">
+                            <div class="col col-lg-2 cursoResumenLeft" id="celdaLeftEstudiante3" onmouseover="miMouseOver('Estudiante',3)" onmouseout="miMouseOut('Estudiante',3)">
+                                <span>Raúl Cid</span>
+                            </div>
+                            <div class="col col-lg-2 cursoResumenCenter"  id="celdaCenterEstudiante3" onmouseover="miMouseOver('Estudiante',3)" onmouseout="miMouseOut('Estudiante',3)">
+                                <span>DeCepCiones</span>
+                            </div>
+                            <div class="col col-lg-6 cursoResumenRight" id="celdaRightEstudiante3" onmouseover="miMouseOver('Estudiante',3)" onmouseout="miMouseOut('Estudiante',3)">
+                                <form action="#">
+                                    <select name="cambiarEquipo" id="cambiarEquipo">
+                                        <option value="">Cambiar el equipo</option>
+                                        <option value="noDeCepCiones">noDeCepCiones</option>
+                                        <option value="otroEquipo">otroEquipo</option>
+                                    </select>
+                                    <input type="submit" name="cambiar" id="cambiar" value="Cambiar" class="botonMuyPeqEstirado">
+                                    <button class="botonMuyPeqEstirado">Eliminar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col col-md-4"> <!-- Tabla de equipos -->
+            <div class="col-lg-5 col-lg-pull-5"> <!-- Tabla de equipos -->
                 <br><h1 class="datosLabelTable">Equipos</h1>
-                <table class="equiposCurso">
-                    <tr>
-                        <th>
-                            <span>Nombre Equipo</span>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>DeCepCiones</span>
-                        </td>
-                    </tr>
-                </table>
+                <div class="row">
+                    <div class="col"> 
+                        <div class="row pequeñoTopDown">
+                            <div class="col col-lg-3 cursoResumenLeftHeader">Nombre</div>
+                            <div class="col col-lg-3 cursoResumenCenterHeader">Integrantes</div>
+                            <div class="col col-lg-2 cursoResumenRightHeader">Gestion</div>
+                        </div>
+                        <div class="row pequeñoTopDown">
+                            <div class="col col-lg-3 cursoResumenLeft" id="celdaLeftEquipo1" onmouseover="miMouseOver('Equipo',1)" onmouseout="miMouseOut('Equipo',1)">
+                                <span>DeCepCiones</span>
+                            </div>
+                            <div class="col col-lg-3 cursoResumenCenter"  id="celdaCenterEquipo1" onmouseover="miMouseOver('Equipo',1)" onmouseout="miMouseOut('Equipo',1)">
+                                <span>Alex Alvarez</span> <br>
+                                <span>Matías Rojas</span> <br>
+                                <span>Raúl Cid</span>
+                            </div>                    
+                            <div class="col col-lg-2 cursoResumenRight" id="celdaRightEquipo1" onmouseover="miMouseOver('Equipo',1)" onmouseout="miMouseOut('Equipo',1)">
+                                <button class="botonMuyPeqEstirado">Eliminar</button>
+                            </div>
+                        </div>
+                        <div class="row pequeñoTopDown">
+                            <div class="col col-lg-3 cursoResumenLeft" id="celdaLeftEquipo2" onmouseover="miMouseOver('Equipo',2)" onmouseout="miMouseOut('Equipo',2)">
+                                <span>No-DeCepCiones</span>
+                            </div>
+                            <div class="col col-lg-3 cursoResumenCenter"  id="celdaCenterEquipo2" onmouseover="miMouseOver('Equipo',2)" onmouseout="miMouseOut('Equipo',2)">
+                                <span>NO Alex Alvarez</span> <br>
+                                <span>NO Matías Rojas</span> <br>
+                                <span>NO Raúl Cid</span>
+                            </div>                    
+                            <div class="col col-lg-2 cursoResumenRight" id="celdaRightEquipo2" onmouseover="miMouseOver('Equipo',2)" onmouseout="miMouseOut('Equipo',2)">
+                                <button class="botonMuyPeqEstirado">Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
         <div class="row ml-2"> <!-- Tabla de coevaluaciones -->
-            <div class="col col-md-10">
-                <h1 class="datosLabelTable">Coevaluaciones</h1>
-                <table class="coevDocCurso">
-                    <tr>
-                        <td>
-                            <span>Coevaluacion 3</span><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                                <span>Coevaluacion 2</span><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Coevaluacion 1</span><br>
-                        </td>
-                    </tr>
-                            
-                </table>
+            <div class="col"> 
+                <br><h1 class="datosLabelTable">Coevaluaciones</h1>
+                    <div class="row">
+                        <div class="col col-md-2 cursoResumenLeftHeader">Nombre</div>
+                        <div class="col col-md-2 cursoResumenCenterHeader">Plazo</div>
+                        <div class="col col-md-1 cursoResumenRightHeader">Publicar</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-md-2 cursoResumenLeft" id="celdaLeftCoev1" onmouseover="miMouseOver('Coev',1)" onmouseout="miMouseOut('Coev',1)">
+                            <span>Coevaluacion 3</span>
+                        </div>
+                        <div class="col col-md-2 cursoResumenCenter"  id="celdaCenterCoev1" onmouseover="miMouseOver('Coev',1)" onmouseout="miMouseOut('Coev',1)">
+                            <span>10 de Noviembre a 25 de Noviembre</span>
+                        </div>                    
+                        <div class="col col-md-1 cursoResumenRight" id="celdaRightCoev1" onmouseover="miMouseOver('Coev',1)" onmouseout="miMouseOut('Coev',1)">
+                            <button class="botonMuyPeqEstirado">Publicar</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-md-2 cursoResumenLeft" id="celdaLeftCoev2" onmouseover="miMouseOver('Coev',2)" onmouseout="miMouseOut('Coev',2)">
+                            <span>Coevaluacion 2</span>
+                        </div>
+                        <div class="col col-md-2 cursoResumenCenter"  id="celdaCenterCoev2" onmouseover="miMouseOver('Coev',2)" onmouseout="miMouseOut('Coev',2)">
+                            <span>1 de Noviembre a 10 de Noviembre</span>
+                        </div>                    
+                        <div class="col col-md-1 cursoResumenRight" id="celdaRightCoev2" onmouseover="miMouseOver('Coev',2)" onmouseout="miMouseOut('Coev',2)">
+                            <button class="botonMuyPeqEstirado">Publicar</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-md-2 cursoResumenLeft" id="celdaLeftCoev3" onmouseover="miMouseOver('Coev',3)" onmouseout="miMouseOut('Coev',3)">
+                            <span>Coevaluacion 1</span>
+                        </div>
+                        <div class="col col-md-2 cursoResumenCenter"  id="celdaCenterCoev3" onmouseover="miMouseOver('Coev',3)" onmouseout="miMouseOut('Coev',3)">
+                            <span>20 de Octubre a 31 de Octubre</span>
+                        </div>
+                        <div class="col col-md-1 cursoResumenRight" id="celdaRightCoev3" onmouseover="miMouseOver('Coev',3)" onmouseout="miMouseOut('Coev',3)">
+                            <button class="botonMuyPeqEstirado">Publicar</button>
+                        </div>
+                    </div>
+                    <br>
             </div>
         </div>
         
     </div>
 </body>
+<script type="text/javascript">
+function miMouseOver(name, key){
+    document.getElementById("celdaLeft"+name+key).classList.add("cursoResumenLeftHover");
+    document.getElementById("celdaCenter"+name+key).classList.add("cursoResumenCenterHover");
+    document.getElementById("celdaRight"+name+key).classList.add("cursoResumenRightHover");
+}
+
+function miMouseOut(name, key){
+    document.getElementById("celdaLeft"+name+key).classList.remove("cursoResumenLeftHover");
+    document.getElementById("celdaCenter"+name+key).classList.remove("cursoResumenCenterHover");
+    document.getElementById("celdaRight"+name+key).classList.remove("cursoResumenRightHover");
+}
+</script>
 </html>

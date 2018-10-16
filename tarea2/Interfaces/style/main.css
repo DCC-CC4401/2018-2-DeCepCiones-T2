@@ -62,6 +62,24 @@ h1.datosLabelTable {
 }
 
 /* ----------------- Botones ----------------- */
+button.botonMuyPeq, input.botonMuyPeq {
+    border-color: #000515;
+    border-radius: 10px;
+    background-color: MediumSeaGreen;
+    color: black;
+    height: 30px;
+    width: 60px;
+}
+
+button.botonMuyPeqEstirado, input.botonMuyPeqEstirado {
+    border-color: #000515;
+    border-radius: 10px;
+    background-color: MediumSeaGreen;
+    color: black;
+    height: 30px;
+    width: 90px;
+}
+
 button.botonPeq, input.botonPeq {
     border-color: #000515;
     border-radius: 10px;
@@ -69,6 +87,15 @@ button.botonPeq, input.botonPeq {
     color: black;
     height: 40px;
     width: 60px;
+}
+
+button.botonPeqEstirado, input.botonPeqEstirado {
+    border-color: #000515;
+    border-radius: 10px;
+    background-color: MediumSeaGreen;
+    color: black;
+    height: 40px;
+    width: 80px;
 }
 
 button.botonMed, input.botonMed {
@@ -112,6 +139,10 @@ button.botonMuyLargo:active, input.botonMuyLargo:active, button.botonGrand:activ
 }
 
 input.botonLargo:active, button.botonMed:active, input.botonMed:active, button.botonPeq:active, input.botonPeq:active {
+    transform: translateY(2px);
+}
+
+button.botonMuyPeq:active, input.botonMuyPeq:active, button.botonMuyPeqEstirado:active, input.botonMuyPeqEstirado:active, button.botonPeqEstirado:active, input.botonPeqEstirado:active {
     transform: translateY(2px);
 }
 
