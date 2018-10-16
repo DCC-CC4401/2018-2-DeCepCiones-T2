@@ -15,7 +15,7 @@ div.content {
     padding:10px 0px 10px 0px;
 }
 
-div.footer {
+div.miFooter {
     padding: 10px 0px 20px 0px;
 }
 
@@ -122,6 +122,10 @@ div.datos label {
 }
 
 
+/* div de tarjetas con datos, todas se llaman curso resumen, esto se debe cambiar */
+
+/*       idea, tamaño estandar: pequeña, mediana, larga, grande, grandelarga (o algo asi) */
+
 div.cursoResumen {
     border: black solid 3px;
     border-radius: 10px;
@@ -170,7 +174,18 @@ div.cursoResumenRightHover {
     border-top: orange solid 3px;
     border-right: orange solid 3px;
     border-bottom: orange solid 3px;
-    background-color: aqua;
+}
+
+div.cursoResumenCenter {
+    border-top: black solid 3px;
+    border-bottom: black solid 3px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px 10px;
+}
+
+div.cursoResumenCenterHover {
+    border-top: orange solid 3px;
+    border-bottom: orange solid 3px;
 }
 
 /* Tablas resumen cursos */
@@ -260,4 +275,12 @@ table.coevDocCurso td{
 .pequeñoLeftRight {
     margin:0px 5px 0px 5px;
 
+}
+
+
+/* otros estilos */
+
+.bordeGruesoTopBottom {
+    border-top: solid black 4px;
+    border-bottom: solid black 4px;
 }
