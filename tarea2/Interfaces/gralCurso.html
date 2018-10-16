@@ -5,10 +5,10 @@
     <title>Detalles Curso</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-     <link href="style/main.css" rel="stylesheet">
+    <link href="style/main.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid"> <!-- este es el container de la pag, para que boostrap pueda controlar el tamaño de todos los elementos-->
+    <div class="container-fluid"> <!-- este es el container de la pag, para que boosdivap pueda condivolar el tamaño de todos los elementos-->
         <div class="row navBar"> <!-- primera row de la pagina, no se si sea necesario este wraper pero si sobra no importa -->
             <nav class="col col-sm-12"> 
                 <img src="recursos/a.png">
@@ -27,53 +27,64 @@
         </div>
         
         <div class="row ml-2">
-            <div class="col col-md-10"> <!-- Tabla de coevaluaciones -->
+            <div class="col"> <!-- Tabla de coevaluaciones -->
                 <br><h1 class="datosLabelTable">Coevaluaciones</h1>
-                <table class="coevCurso">
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Plazo</th>
-                        <th>Estado</th>
-                    </tr>
-
-                    <tr>
-                        <td>
+                    <div class="row">
+                        <div class="col col-md-2 cursoResumenLeftHeader">Nombre</div>
+                        <div class="col col-md-2 cursoResumenCenterHeader">Plazo</div>
+                        <div class="col col-md-2 cursoResumenRightHeader">Estado</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-md-2 cursoResumenLeft" id="celdaLeft1" onmouseover="miMouseOver(1)" onmouseout="miMouseOut(1)">
                             <span class="nombreCoev">Coevaluacion 3</span>
-                        </td>
-                        <td>
+                        </div>
+                        <div class="col col-md-2 cursoResumenCenter"  id="celdaCenter1" onmouseover="miMouseOver(1)" onmouseout="miMouseOut(1)">
                             <span>10 de Noviembre a 25 de Noviembre</span>
-                        </td>                    
-                        <td>
+                        </div>                    
+                        <div class="col col-md-2 cursoResumenRight" id="celdaRight1" onmouseover="miMouseOver(1)" onmouseout="miMouseOut(1)">
                             <span>Pendiente</span>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-md-2 cursoResumenLeft" id="celdaLeft2" onmouseover="miMouseOver(2)" onmouseout="miMouseOut(2)">
                             <span class="nombreCoev">Coevaluacion 2</span>
-                        </td>
-                        <td>
+                        </div>
+                        <div class="col col-md-2 cursoResumenCenter"  id="celdaCenter2" onmouseover="miMouseOver(2)" onmouseout="miMouseOut(2)">
                             <span>1 de Noviembre a 10 de Noviembre</span>
-                        </td>                    
-                        <td>
+                        </div>                    
+                        <div class="col col-md-2 cursoResumenRight" id="celdaRight2" onmouseover="miMouseOver(2)" onmouseout="miMouseOut(2)">
                             <span>Contestada</span>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-md-2 cursoResumenLeft" id="celdaLeft3" onmouseover="miMouseOver(3)" onmouseout="miMouseOut(3)">
                             <span class="nombreCoev">Coevaluacion 1</span>
-                        </td>
-                        <td>
+                        </div>
+                        <div class="col col-md-2 cursoResumenCenter"  id="celdaCenter3" onmouseover="miMouseOver(3)" onmouseout="miMouseOut(3)">
                             <span>20 de Octubre a 31 de Octubre</span>
-                        </td>
-                        <td>
+                        </div>
+                        <div class="col col-md-2 cursoResumenRight" id="celdaRight3" onmouseover="miMouseOver(3)" onmouseout="miMouseOut(3)">
                             <span>Publicada</span>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
 </body>
+<script type="text/javascript">
+function miMouseOver(key){
+    document.getElementById("celdaLeft"+key).classList.add("cursoResumenLeftHover");
+    document.getElementById("celdaCenter"+key).classList.add("cursoResumenCenterHover");
+    document.getElementById("celdaRight"+key).classList.add("cursoResumenRightHover");
+}
+
+function miMouseOut(key){
+    document.getElementById("celdaLeft"+key).classList.remove("cursoResumenLeftHover");
+    document.getElementById("celdaCenter"+key).classList.remove("cursoResumenCenterHover");
+    document.getElementById("celdaRight"+key).classList.remove("cursoResumenRightHover");
+}
+</script>
 </html>

@@ -179,7 +179,6 @@ div.cursoResumenRightHover {
 div.cursoResumenCenter {
     border-top: black solid 3px;
     border-bottom: black solid 3px;
-    border-radius: 0px 10px 10px 0px;
     padding: 5px 10px;
 }
 
@@ -187,6 +186,33 @@ div.cursoResumenCenterHover {
     border-top: orange solid 3px;
     border-bottom: orange solid 3px;
 }
+
+/* reglas para el header */
+div.cursoResumenLeftHeader {
+    background-color: mediumseagreen;
+    border-top: black solid 3px;
+    border-left: black solid 3px;
+    border-bottom: black solid 3px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px 10px;
+}
+
+div.cursoResumenRightHeader {
+    background-color: mediumseagreen;
+    border-top: black solid 3px;
+    border-right: black solid 3px;
+    border-bottom: black solid 3px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px 10px;
+}
+
+div.cursoResumenCenterHeader {
+    background-color: mediumseagreen;
+    border-top: black solid 3px;
+    border-bottom: black solid 3px;
+    padding: 5px 10px;
+}
+
 
 /* Tablas resumen cursos */
 
