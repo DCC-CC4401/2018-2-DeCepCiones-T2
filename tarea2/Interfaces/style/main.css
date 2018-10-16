@@ -61,6 +61,7 @@ h1.datosLabelTable {
     font-weight: bold;
 }
 
+/* ----------------- Botones ----------------- */
 button.botonPeq, input.botonPeq {
     border-color: #000515;
     border-radius: 10px;
@@ -105,6 +106,16 @@ button.botonMuyLargo, input.botonMuyLargo {
     height: 30px;
     width: 250px;
 }
+
+button.botonMuyLargo:active, input.botonMuyLargo:active, button.botonGrand:active, input.botonGrand:active, button.botonLargo:active {
+    transform: translateY(2px);
+}
+
+input.botonLargo:active, button.botonMed:active, input.botonMed:active, button.botonPeq:active, input.botonPeq:active {
+    transform: translateY(2px);
+}
+
+/* ----------------- Botones ----------------- */
 
 div.datos label {
     color: aliceblue
